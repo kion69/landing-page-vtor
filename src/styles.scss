@@ -1,5 +1,6 @@
 @import "../node_modules/uikit/src/scss/variables.scss";
 @import "../node_modules/uikit/src/scss/uikit.scss";
+@import "./assets/css/fontello.scss";
 
 // body {
 //   height: 100vh;
@@ -9,8 +10,16 @@
 
 html {
   height: 100%;
+  font-family: Arial,Impact;
 }
 
 body {
   min-height: 100%;
+}
+
+
+::selection {
+  background: #8c53c6;
+  color: #fff;
+  text-shadow: none;
 }

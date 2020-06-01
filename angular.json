@@ -73,6 +73,7 @@
           "options": {
             "browserTarget": "site-vitor-angular:build"
           },
+          "aot": true,
           "configurations": {
             "production": {
               "browserTarget": "site-vitor-angular:build:production"

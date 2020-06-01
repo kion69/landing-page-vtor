@@ -1,34 +1,143 @@
-.first-row {
-  background-image: url('../../../assets/images/full_man-in-suit-jacket-standing-beside-projector-screen-2173508.jpg');
+.first-row,
+.seccond-row,
+.third-row {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   background-attachment: fixed;
-  background-position: center -300px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.first-row {
+  background-position: right;
+  background-size: unset;
+  background-color: white;
+  background-image: url('../../../assets/images/full_man-in-suit-jacket-standing-beside-projector-screen-2173508.jpg');
+  // height: 100vh;
+  // width: 100vw;
+  // display: flex;
+  // flex-direction: column;
+
+  img {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .first-row {
+    background-position: center 300;
+    background-color: white;
+    display: block;
+    overflow-x: hidden;
+
+    // img {
+    //   margin: 0px -20vh;
+    //   height: 90vh;
+    //   max-width: none;
+    // }
+  }
+
+  .uk-card {
+    margin: 10px;
+  }
+
+  .scroll-down {
+    .content {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .seccond-row {
-  margin: 0 10px;
+  width: 100%;
   height: 100vh;
+
+  .seccond-row-content {
+    margin: 0 10px;
+  }
+}
+
+
+.scroll-down {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  color: white;
+
+  span {
+    align-self: center
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14pt;
+    cursor: pointer;
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .arrow-down {
+    align-self: center;
+    bottom: 0px;
+    animation-name: downToUp;
+    animation-duration: 0.6s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes downToUp {
+    0% {
+      bottom: 0;
+    }
+
+    50% {
+      bottom: 5px;
+    }
+
+    100% {
+      bottom: 8px;
+    }
+  }
+
 }
 
 .card-container {
   margin: 10px;
 }
 
-@media (max-width: 1024px) {
 
-  .first-row {
-    width: 100%;
-    height: 250px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.profile-info {
 
-  .uk-card {
-    margin: 10px;
+  display: flex;
+  flex-direction: row;
+
+  .profile-user {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .icon-user {
+      font-size: 100px;
+      align-self: center;
+    }
   }
+}
+
+.third-row {
+  background-image: url('../../../assets/images/full_man-in-suit-jacket-standing-beside-projector-screen-2173508.jpg');
 }
