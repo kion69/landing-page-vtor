@@ -4,6 +4,6 @@
    },
    {
      "displayName": "Sobre",
-     "routeName": "/about"
+     "routeName": "/about" 
    }
  ]
