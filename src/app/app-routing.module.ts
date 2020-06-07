@@ -5,10 +5,10 @@ import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { animation: 'Home' } },
+  { path: 'home', component: HomeComponent, data: { animation: 'Home', parallaxNavBar: true } },
   { path: 'about', component: AboutComponent, data: { animation: 'About' } },
   { path: '**', redirectTo: '/home', },
-  { path: '', redirectTo: '/home', pathMatch: 'full',   },
+  { path: '', redirectTo: '/home', pathMatch: 'full', },
 ];
 
 @NgModule({

@@ -16,18 +16,19 @@
     </div>
 
     <div id="body-content">
-        <app-navigation-bar></app-navigation-bar>
+        <app-navigation-bar [parallaxNavBar]="parallaxNavBar"></app-navigation-bar>
 
         <div class="seccond-row" uk-parallax="opacity: 0,1; y: 0,30; viewport: 0.3">
 
             <div class="seccond-row-content">
                 <div class="text-name">
-                    <h2 style="color: white;">Vitor Ornellas</h2>
+                    <h2 style="color: white;"> Vitor Ornellas</h2>
                 </div>
                 <div class="card-container uk-column-1-1@s uk-column-1-3@m">
                     <div class="uk-card uk-card-default uk-card-small uk-card-body" *ngFor="let item of [1,2,3]">
                         <h3 class="uk-card-title">Lorem</h3>
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.adipisicing elit.adipisicing elit.adipisicing elit.adipisicing elit.</span>
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.adipisicing elit.adipisicing
+                            elit.adipisicing elit.adipisicing elit.</span>
                     </div>
                 </div>
             </div>
