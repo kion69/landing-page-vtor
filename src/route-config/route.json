@@ -1,0 +1,9 @@
+ [{
+     "displayName": "Início",
+     "routeName": "/home"
+   },
+   {
+     "displayName": "Sobre",
+     "routeName": "/about"
+   }
+ ]

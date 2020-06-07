@@ -1,3 +1,9 @@
+@import '../../../assets/css/variables.scss';
+
+:host {
+  background-color: $default_backgroundColor;
+}
+
 .first-row,
 .seccond-row,
 .third-row {
@@ -14,33 +20,23 @@
   background-size: unset;
   background-color: white;
   background-image: url('../../../assets/images/full_man-in-suit-jacket-standing-beside-projector-screen-2173508.jpg');
-  // height: 100vh;
-  // width: 100vw;
-  // display: flex;
-  // flex-direction: column;
 
   img {
     align-self: flex-end;
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 900px) {
 
   .first-row {
-    background-position: center 300;
+    background-position: center 0;
     background-color: white;
     display: block;
     overflow-x: hidden;
-
-    // img {
-    //   margin: 0px -20vh;
-    //   height: 90vh;
-    //   max-width: none;
-    // }
   }
 
   .uk-card {
-    margin: 10px;
+    margin: 10px 0;
   }
 
   .scroll-down {
@@ -51,11 +47,14 @@
 }
 
 .seccond-row {
-  width: 100%;
-  height: 100vh;
+  transform: translateY(0px) !important;
+}
 
-  .seccond-row-content {
-    margin: 0 10px;
+.seccond-row-content {
+  padding: 0px 10px;
+
+  .text-name {
+    padding: 10px 0;
   }
 }
 
@@ -112,11 +111,6 @@
   }
 
 }
-
-.card-container {
-  margin: 10px;
-}
-
 
 .profile-info {
 

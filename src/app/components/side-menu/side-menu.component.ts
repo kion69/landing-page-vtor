@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import UIkit from 'uikit';
+import routesConfig from '../../../route-config/route.json';
 
 @Component({
   selector: 'app-side-menu',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideMenuComponent implements OnInit {
 
-  constructor() { }
+  routes = routesConfig;
 
-  ngOnInit(): void {
+  constructor(private router: Router) { }
+
+  ngOnInit(): void { }
+
+  closeMenu(route) {
+    UIkit.offcanvas('.side-menu').hide();
+    setTimeout(() => {
+      this.router.navigateByUrl(`/${route}`);
+    }, 300);
   }
 
 }

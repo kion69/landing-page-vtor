@@ -1,14 +1,64 @@
+@import '../../../assets/css/variables.scss';
+
 .menu-container {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
-  span {
+  a {
     font-size: 16pt;
-    color: #8c53c6;
-    cursor: pointer;
+    color: $default_backgroundColor;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $default_backgroundColor;
+    color: white;
   }
 }
 
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  a {
+    color: $default_backgroundColor;
+    font-weight: 500;
+    font-size: 14pt;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  &:hover {
+    background-color: $default_backgroundColor;
+    color: white;
+
+    >a {
+      color: white;
+    }
+  }
+}
+
+.uk-offcanvas-bar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  .uk-offcanvas-close {
+    position: unset;
+    z-index: 1000;
+    align-self: flex-end;
+    padding-top: 30px;
+    padding-right: 30px;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.icon-menu {
+  color: white;
+}
 
 @media (max-width: 1024px) {
   .menu-container {
@@ -17,13 +67,12 @@
 
   .menu-container-mobile {
     display: flex;
-    flex-direction: row;
+    position: absolute;
 
     span {
-      font-size: 16pt;
-      color: white;
       cursor: pointer;
-      margin: 5px 10px
+      font-size: 16pt;
+      margin: 10px;
     }
   }
 }
@@ -35,20 +84,7 @@
   }
 
   :host {
-    width: 24%;
-    position: absolute
-  }
-}
-
-
-.left-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  span {
-    color: #8c53c6;
-    font-weight: 500;
-    font-size: 14pt;
+    width: 330px;
+    position: absolute;
   }
 }
