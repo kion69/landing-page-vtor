@@ -1,5 +1,5 @@
-<div class="menu-container" *ngFor="let route of routes">
-    <a (click)="closeMenu(route.routeName)" style="margin: 15px">{{route.displayName}}</a>
+<div class="menu-container" *ngFor="let route of routes" (click)="closeMenu(route.routeName)">
+    <a style="margin: 15px">{{route.displayName}}</a>
 </div>
 
 <div class="menu-container-mobile">
@@ -8,12 +8,11 @@
 
 <div class="side-menu" id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
 
-
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-        <div class="left-bar" *ngFor="let route of routes">
-            <a (click)="closeMenu(route.routeName)" style="margin: 15px">{{route.displayName}}</a>
+        <div class="left-bar" *ngFor="let route of routes" (click)="closeMenu(route.routeName)">
+            <a  style="margin: 15px">{{route.displayName}}</a>
         </div>
 
     </div>

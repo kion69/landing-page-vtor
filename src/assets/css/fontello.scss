@@ -20,7 +20,7 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -57,6 +57,8 @@
  
 .icon-user:before { content: '\e800'; } /* '' */
 .icon-home:before { content: '\e801'; } /* '' */
+.icon-down-circled-outline:before { content: '\e802'; } /* '' */
+.icon-down-circle:before { content: '\e803'; } /* '' */
+.icon-menu:before { content: '\e804'; } /* '' */
 .icon-lightbulb:before { content: '\f0eb'; } /* '' */
 .icon-angle-down:before { content: '\f107'; } /* '' */
-.icon-menu:before { content: '\e802'; } /* '' */

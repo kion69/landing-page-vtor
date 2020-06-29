@@ -1,42 +1,51 @@
 @import '../../../assets/css/variables.scss';
+@import '../../components/navigation-bar/navigation-bar.component.scss';
 
 :host {
   background-color: $default_backgroundColor;
   width: 100%;
 }
 
-.content-body {
-  height: 100vh;
-  padding-top: 15px;
-}
-
 .personal-info {
   display: flex;
   flex-direction: column;
-  height: 50vh;
-  justify-content: space-around;
   align-items: center;
   text-align: center;
+
 }
 
 .personal-image {
 
+  padding-top: 15px;
+
   .personal-image-circle {
+    // background-image: url('../../../assets/images/AirBrush_20200302222602.jpg');
     background-color: white;
-    height: 150px;
-    width: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    .icon-user {
-      font-size: 100px;
-      align-self: center;
-    }
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background-position: center;
   }
 }
 
-
 .personal-text {
   color: white;
+  margin: 15px 0;
+
+  .name {
+    background: #a679d3;
+
+    h2 {
+      padding: 15px;
+      color: white;
+    }
+  }
+
+  .description {
+    color: white;
+    padding: 0 15px;
+  }
 }

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -8,8 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(
-    private activeRoute: ActivatedRoute) {
+  constructor() {
   }
 
   ngOnInit(): void { }

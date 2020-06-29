@@ -31,6 +31,7 @@
   .first-row {
     background-position: center 0;
     background-color: white;
+    background-size: cover;
     display: block;
     overflow-x: hidden;
   }
@@ -76,7 +77,7 @@
   .content {
     display: flex;
     flex-direction: column;
-    font-size: 14pt;
+    font-size: 18pt;
     cursor: pointer;
     color: white;
 
